@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+/* body { */
+    /* max-width: 1200px; */
+/* } */
+
+.main {
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/random');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* margin: 0 auto; */
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo  {
+    color: #fff;
+    font-size: 24px;
+}
+
+.logo__dot {
+    color: #1a5c34;
+    font-weight: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    height: 67px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+}
+
+/* Carousel */
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    height: calc(100% - 67px);
+    /* justify-content: center;
+    align-items: center; */
+  }
+  
+ .slide-container {
+     height: 100%;
+ }
+
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  .mySlides.visible {
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  .mySlides h2, .mySlides span {
+      color: #fff;
+  }
+
+  .btn {
+      background-color: #23c0d2;
+      color: #fff;
+      padding: 5px 20px;
+      border-radius: 25px;
+      outline: none;
+      border: none;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #1a5c34;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .dots {
+      position: absolute;
+      height: 18px;
+      height: 18px;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #1a5c34;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* Carousel */
+
+/* About */
+
+  .about {
+      height: 100vh;
+  }
+
+  .about > h2 {
+    font-size: 32px;
+    text-align: center;
+    margin: 45px 0 15px 0;
+  }
+
+  .about > span {
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+  }
+
+.hr-line {
+    width: 20px;
+    margin: 0 auto;
+    /* color: #17daa2; */
+    border-top: 1px solid #17daa2;
+}
+
+
+.about__images {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about__images > div {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 0 0 50px; */
+}
+
+.bordered {
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+    border-radius: 50%;
+    text-align: center;
+
+
+    display:inline-block;
+
+    line-height: 150px;
+    background-color:#17daa2;
+    color:white;
+    vertical-align: bottom;
+}
+
+.about__images > div > h3 {
+    margin: 50px 0 0 0;
+}
+
+.about__images > div > span {
+    margin: 30px 0 0 0;
+}
+
+.btn__green {
+    background-color: #17daa2;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    display: block;
+}
+
+.about .btn__green {
+    margin: 100px auto 0 auto;
+    /* color: red; */
+}
+
+
+.photo, .computer {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+}
+
+.gray__container {
+    background-color: #f9f9f9;
+}
+
+.first__part__container {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url('https://source.unsplash.com/random');
+    /* background-size: auto 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.second__part__container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .computer {
+    height: 60vh;
+    display: flex;
+} */
